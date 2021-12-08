@@ -10,7 +10,6 @@ var tasksToDoEl = document.querySelector("#tasks-to-do");
 var createTaskHandler = function() {
     var listItemEl = document.createElement("li");
     listItemEl.className = "task-item";
-    listItemEl.textContent = "Ummm... I know there is something I need to do....";
     tasksToDoEl.appendChild(listItemEl);
 }
 
