@@ -1,49 +1,48 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="assets/css/style.css">
-     <title>Document</title>
- </head>
- <body>
-    <!-- The header section --> 
-    <header>
-         <h1 class="page-title">Taskinator</h1>
-         <p>Click the button below to add a new task</p>
-         <form id="task-form">
-            <div class="form-group">
-              <input type="text" name="task-name" class="text-input" placeholder="Enter Task Name" />
-            </div>
-            <div class="form-group">
-              <select name="task-type" class="select-dropdown">
-                <option value="" disabled selected>Pick a task type</option>
-                <option value="Home">Home</option>
-                <option value="Work">Work</option>
-                <option value="School">School</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <button class="btn" id="save-task" type="submit">Add Task</button>
-            </div>
-          </form>
-     </header>
+<!DOCTYPE html>
+<html lang="en">
 
-     <!-- The main section of the webpage -->
-     <main class="page-content">
-         <section class="task-list-wrapper">
-             <h2 class="list-title">Tasks To Do</h2>
-             <ul id="tasks-to-do" class="task-list">                 
-             </ul>
-         </section>
-     </main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Taskinator</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
 
-     <footer>
-         &copy;2020 by Taskinator
-     </footer>
-     
+    <body>
+        <header>
+            <h1 class="page-title">Taskinator</h1>
+            <p>Click the button below to add a new task!</p>
+            <form id="task-form">
+                <div class="form-group">
+                    <input type="text" name="task-name" placeholder="Enter Task Name" />                    
+                 </div>
+                 <div class="form-group">
+                    <select class="select-dropdown" name="task-type">
+                      <option value="" disabled selected>Pick a task type</option>
+                      <option value="Print">Print</option>
+                      <option value="Web">Web</option>
+                      <option value="Mobile">Mobile</option>
+                    </select>
+                  </div>
 
-    <script src="assets/js/script.js"></script>
- </body>
- </html>
+                <div class="form-group">
+                  <button class="btn" id="save-task" type="submit">Add Task</button>
+                </div>
+              </form>
+        </header>
+
+        <main class="page-content">
+            <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks To Do</h2>
+            <ul id="tasks-to-do" class="task-list"></ul>
+            </section>
+        </main>
+
+        <footer>
+            &copy;2020 by Taskinator
+        </footer>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
